@@ -16,7 +16,7 @@ export const getResponsiveHeight = (heightPercentage, height = SCREEN_HEIGHT) =>
   return PixelRatio.roundToNearestPixel(height * elemHeight / 100);
 };
 
-// Responsive elements size
+// Responsive elements size (based on device height)
 export const ELEMENTS_SIZE = {
   _500: getResponsiveHeight("40.6%"),
   _400: getResponsiveHeight("32.5%"),
